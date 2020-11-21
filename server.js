@@ -2,9 +2,11 @@ const express = require('express');
 const morgan = require('morgan');
 const port = 3000;
 
+require('dotenv').config()
 const app = express();
 
-// TODO: connect to DB
+require('./config/database');
+require('./config/passport');
 
 app.set('view engine', 'ejs');
 
