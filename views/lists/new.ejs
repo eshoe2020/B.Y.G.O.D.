@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B.Y.G.O.D.</title>
+    <title>Add a New BYGOD</title>
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Special+Elite&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
@@ -11,22 +11,33 @@
 <body>
     <h1>B.Y.G.O.D.</h1>
     <h2>Before You Get Old or Die</h2>
-
+    <h3>Add a New BYGOD</h3>
     <div class=navbar-vertical">
         <nav>
             <ul class="right">
                 <li>
-                    
                     <a href="/users/profile">Your BYGODs</a>
                     <a href="/items/new">New BYGOD</a>
                     <a href="/lists/new">New BYGOD List</a>
                     <a href="/users/allItems">All BYGODs</a>
                     <a href="/users/allLists">All Lists</a>
                     <a href="/logout">Logout</a>
-                   
                 </li>
             </ul>
         </nav>
     </div>
+
+    <main>
+        <div id="users">
+           <% users.forEach(function(user){ %> 
+            <img class="user-photo" src="<%= user.avatarURL %>" alt="">
+            <span class="user-name"><%= user.name %></span>
+          
+            <%})%>
+        </div>
+        <!--TODO: add BYGOD items user has entered-->  
+    </main>
+
+
 </body>
 </html>
