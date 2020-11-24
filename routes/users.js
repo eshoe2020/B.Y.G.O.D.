@@ -4,7 +4,7 @@ const isAuthenticated = require('../utils/authorization')
 
 // GET/users 
 router.get('/users', usersCtrl.index);
-router.get('/users/profile', isAuthenticated, usersCtrl.profile);
+router.get('/users/:id/profile', isAuthenticated, usersCtrl.profile);
 
 // POST/
 

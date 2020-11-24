@@ -1,12 +1,12 @@
 const express = require('express');
 const morgan = require('morgan');
+const methodOverride = require('method-override');
 const session = require('express-session');
 const passport = require('passport');
 const port = process.env.PORT || 3000;
 
 const indexRoutes = require('./routes/index');
 const usersRoutes = require('./routes/users');
-const listsRoutes = require('./routes/lists');
 const itemsRoutes = require('./routes/items');
 
 const app = express();
@@ -22,8 +22,9 @@ require('./config/passport');
 
 app.use(morgan('dev'));
 app.use(express.static('public'));
-app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(methodOverride('_method'));
+
 app.use(session({
     secret: process.env.SESSION_SECRET,
     resave: false,
@@ -35,8 +36,7 @@ app.use(passport.session());
 
 app.use('/', indexRoutes);
 app.use('/', usersRoutes);
-app.use('/lists', listsRoutes);
-app.use('items', itemsRoutes);
+app.use('/', itemsRoutes);
 
 
 app.listen(port, function() {

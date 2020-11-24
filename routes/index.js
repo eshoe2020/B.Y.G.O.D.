@@ -19,8 +19,5 @@ router.get('/', function(req, res) {
     res.render('index');
 });
 
-router.get('/', function(req, res) {
-    res.render('show');
-});
 
 module.exports = router;

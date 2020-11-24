@@ -8,7 +8,7 @@ passport.use(new GoogleStrategy({
     callbackURL: process.env.GOOGLE_CALLBACK
 }, function(accessToken, refreshToken, profile, cb){
     User.findOne({ googleId: profile.id }, function(err, user){
-        console.log(profile)
+        
         if(err) return cb(err);
         if(user) {
             return cb(null, user)
@@ -19,7 +19,7 @@ passport.use(new GoogleStrategy({
                 avatarURL: profile.photos[0].value,
                 googleId: profile.id
             });
-
+            console.log(newUser)
             newUser.save(function(err){
                 console.log(newUser)
                 if(err) return cb(err);
