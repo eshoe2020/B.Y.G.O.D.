@@ -30,6 +30,9 @@
                 <input name="content" value="<%= item.content %>">
                 <input type="submit" value="Submit Edit">
             </form>
+            <form action="/items/<%=item._id%>?_method=DELETE" method="POST">
+            <button type="submit">DELETE</button>
+            </form>
         </div>
        
 

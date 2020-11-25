@@ -6,10 +6,11 @@ module.exports = {
     addNewItem, 
     create, 
     editItem, 
-    updateItem
+    updateItem, 
+    deleteItem
 };
 
-function addNewItem (req, res) {
+function addNewItem(req, res) {
     User.findById(req.user, function(err, user){
         res.render('items/new', {userId: req.user.id, user})
     });
@@ -29,7 +30,7 @@ function create(req, res) {
     )}
 )}     
 
-function editItem (req, res) {
+function editItem(req, res) {
     itemId= req.params.id;
     Item.findById(itemId, function(err, item){
         console.log(itemId);
@@ -41,9 +42,13 @@ function editItem (req, res) {
 function updateItem(req, res) {
     Item.findByIdAndUpdate(req.params.id, req.body,
         function(err, item){
-            console.log(err);
-                    
-                    res.redirect(`/users/${req.user._id}/profile`)
-              
-        })
+            res.redirect(`/users/${req.user._id}/profile`)
+    })
+}
+
+
+function deleteItem(req, res) {
+    Item.findByIdAndDelete(req.params.id, function(err, item){
+        res.redirect(`/users/${req.user._id}/profile`)
+    })
 }
