@@ -6,6 +6,6 @@ const isAuthenticated = require('../utils/authorization');
 router.get('/items/new', isAuthenticated, itemsCtrl.addNewItem);
 router.post('/users/:id/profile', isAuthenticated, itemsCtrl.create);
 router.get('/items/:id/edit', isAuthenticated, itemsCtrl.editItem);
-router.put('/users/:id/profile', isAuthenticated, itemsCtrl.updateItem);
+router.put('/items/:id', isAuthenticated, itemsCtrl.updateItem);
 
 module.exports = router;

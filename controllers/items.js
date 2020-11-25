@@ -30,14 +30,20 @@ function create(req, res) {
 )}     
 
 function editItem (req, res) {
-    Item.findById(req.params.id, function(err, item){
+    itemId= req.params.id;
+    Item.findById(itemId, function(err, item){
+        console.log(itemId);
         res.render(`items/edit`, {item, user: req.user})
     })
 }
 
-function updateItem (req, res) {
-    
-    Item.findOneAndUpdate({ObjectId: req.params.id});
-        item.content = req.body;
-        res.redirect('profile')
+
+function updateItem(req, res) {
+    Item.findByIdAndUpdate(req.params.id, req.body,
+        function(err, item){
+            console.log(err);
+                    
+                    res.redirect(`/users/${req.user._id}/profile`)
+              
+        })
 }

@@ -11,7 +11,7 @@
 <body>
     <h1>B.Y.G.O.D.</h1>
     <h2>Before You Get Old or Die</h2>
-    <h3>Add a New BYGOD</h3>
+    <h3>EDIT BYGOD page</h3>
     <div class=navbar-vertical">
         <nav>
             <ul class="right">
@@ -26,8 +26,8 @@
     <main>
         
         <div class="edit-item">
-            <form action="/users/<%= user._id%>/profile?_method=PUT" method="POST">
-                <input name="content" value="<%= item.content%>">
+            <form action="/items/<%= item._id%>?_method=PUT" method="POST">
+                <input name="content" value="<%= item.content %>">
                 <input type="submit" value="Submit Edit">
             </form>
         </div>
