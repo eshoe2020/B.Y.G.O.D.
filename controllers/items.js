@@ -1,11 +1,12 @@
 const item = require('../models/item');
 const Item = require('../models/item');
-const user = require('../models/user');
 const User = require('../models/user');
 
 module.exports = {
     addNewItem, 
-    create
+    create, 
+    editItem, 
+    updateItem
 };
 
 function addNewItem (req, res) {
@@ -27,3 +28,16 @@ function create(req, res) {
         }
     )}
 )}     
+
+function editItem (req, res) {
+    Item.findById(req.params.id, function(err, item){
+        res.render(`items/edit`, {item, user: req.user})
+    })
+}
+
+function updateItem (req, res) {
+    
+    Item.findOneAndUpdate({ObjectId: req.params.id});
+        item.content = req.body;
+        res.redirect('profile')
+}

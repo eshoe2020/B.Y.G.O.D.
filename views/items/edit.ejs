@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a New BYGOD List</title>
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>B.Y.G.O.D.</h1>
+    <h2>Before You Get Old or Die</h2>
+    <h3>Add a New BYGOD</h3>
+    <div class=navbar-vertical">
+        <nav>
+            <ul class="right">
+                <li>
+                    <a href="/users/:id/profile">Go Back</a>
+                    <a href="/logout">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        
+        <div class="edit-item">
+            <form action="/users/<%= user._id%>/profile?_method=PUT" method="POST">
+                <input name="content" value="<%= item.content%>">
+                <input type="submit" value="Submit Edit">
+            </form>
+        </div>
+       
+
+
+
+
+    </main>
+
+
+</body>
+</html>
+

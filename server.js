@@ -19,7 +19,6 @@ require('./config/database');
 require('./config/passport');
 
 
-
 app.use(morgan('dev'));
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }));
@@ -33,6 +32,11 @@ app.use(session({
 
 app.use(passport.initialize());
 app.use(passport.session());
+
+app.use(function(req, res, next){
+    res.locals.user = req.user;
+    next();
+});
 
 app.use('/', indexRoutes);
 app.use('/', usersRoutes);

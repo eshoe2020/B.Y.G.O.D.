@@ -17,7 +17,7 @@
             <ul class="right">
                 <li>
                     <a href="/users/<%= user._id %>/profile">Your Profile</a>
-                    <a href="/users/<%= user._id %>/items/new">New BYGOD</a>
+                    <a href="/items/new">New BYGOD</a>
                     <a href="/users/allItems">All BYGODs</a>
                     <a href="/logout">Logout</a>
                 </li>
@@ -32,14 +32,21 @@
             <span class="user-name"><%= user.name %></span>
         </div>
         <div id="user-items">BYGOD...</div>
-        <ul>
-            <%- items.map(i =>
-                `<li>${i.content} </li>`
-             ).join('') %>
-        </ul>
+        <%items.forEach(function(item, idx){ %>
+            <li>
+                <%= item.content %> <a href="/items/<%= item._id %>/edit">
+                <button class="edit-button">Edit</button>
+                </a> 
+            </li>
             
+   
+        <% })%>
+    
+
+
     </main>
 
 
 </body>
 </html>
+
