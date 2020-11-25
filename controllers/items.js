@@ -7,7 +7,8 @@ module.exports = {
     create, 
     editItem, 
     updateItem, 
-    deleteItem
+    deleteItem,
+    all: seeAll
 };
 
 function addNewItem(req, res) {
@@ -30,6 +31,7 @@ function create(req, res) {
     )}
 )}     
 
+
 function editItem(req, res) {
     itemId= req.params.id;
     Item.findById(itemId, function(err, item){
@@ -50,5 +52,16 @@ function updateItem(req, res) {
 function deleteItem(req, res) {
     Item.findByIdAndDelete(req.params.id, function(err, item){
         res.redirect(`/users/${req.user._id}/profile`)
+    })
+}
+
+
+function seeAll(req, res) {
+    User.find({}).populate('item').exec(function(err, users){
+        item.find({}, function(err, item){
+            res.render('items/all', {
+                users, item
+            })
+        })
     })
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B.Y.G.O.D.</title>
+    <title>Your BYGODs</title>
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Special+Elite&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
@@ -11,19 +11,41 @@
 <body>
     <h1>B.Y.G.O.D.</h1>
     <h2>Before You Get Old or Die</h2>
-
+    <h3>See All Other User BYGODs</h3>
     <div class=navbar-vertical">
         <nav>
             <ul class="right">
                 <li>
-                    
                     <a href="/users/<%= user._id %>/profile">Your Profile</a>
-                    <a href="/items/all">Explore BYGODs</a>
+                    <a href="/items/new">New BYGOD</a>
                     <a href="/logout">Logout</a>
-                   
                 </li>
             </ul>
         </nav>
     </div>
+
+    <main>
+        <div class="user-box">
+            <% users.forEach(function(user, idx){ %>
+            <div class=user-bygod>
+                <img class="user-photo" src="<%= user.avatarURL %>" alt="">
+                <span class="user-name"><%= user.name %></span>
+            </div>
+            <% user.item.forEach(function(item, idx){ %>
+                <li>
+                    <%= item.content %> 
+                </li>
+               <% }) %>
+
+
+            <% }) %>
+            
+            
+
+
+    </div>
+    </main>
+
+
 </body>
 </html>

@@ -8,5 +8,7 @@ router.post('/users/:id/profile', isAuthenticated, itemsCtrl.create);
 router.get('/items/:id/edit', isAuthenticated, itemsCtrl.editItem);
 router.put('/items/:id', isAuthenticated, itemsCtrl.updateItem);
 router.delete('/items/:id', isAuthenticated, itemsCtrl.deleteItem);
+router.get('/items/all', itemsCtrl.all);
+
 
 module.exports = router;

@@ -18,7 +18,7 @@
                 <li>
                     <a href="/users/<%= user._id %>/profile">Your Profile</a>
                     <a href="/items/new">New BYGOD</a>
-                    <a href="/users/allItems">All BYGODs</a>
+                    <a href="/items/all">Explore BYGODs</a>
                     <a href="/logout">Logout</a>
                 </li>
             </ul>
@@ -31,17 +31,16 @@
             <img class="user-photo" src="<%= user.avatarURL %>" alt="">
             <span class="user-name"><%= user.name %></span>
         </div>
+
+        <%user.item.forEach(function(item, idx){ %>
         <div id="user-items">BYGOD...</div>
-        <%items.forEach(function(item, idx){ %>
             <li>
                 <%= item.content %> <a href="/items/<%= item._id %>/edit">
                 <button class="edit-button">Edit</button>
                 </a> 
             </li>
             
-   
-        <% })%>
-    
+            <% })%>
 
 
     </main>
