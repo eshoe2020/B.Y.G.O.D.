@@ -6,18 +6,22 @@
     <title>Your BYGODs</title>
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <h1>B.Y.G.O.D.</h1>
     <h2>Before You Get Old or Die</h2>
-    <h3>See All Other User BYGODs</h3>
-    <div class=navbar-vertical">
+    <h4>Explore BYGODs</h4>
+    <div class="navbar">
         <nav>
-            <ul class="right">
-                <li>
+            <ul class="navbar">
+                <li class="navbar">
                     <a href="/users/<%= user._id %>/profile">Your Profile</a>
                     <a href="/items/new">New BYGOD</a>
+                    <a href="/items/all">Explore BYGODs</a>
                     <a href="/logout">Logout</a>
                 </li>
             </ul>
@@ -27,23 +31,18 @@
     <main>
         <div class="user-box">
             <% users.forEach(function(user, idx){ %>
-            <div class=user-bygod>
+            <div class="user-bygod">
                 <img class="user-photo" src="<%= user.avatarURL %>" alt="">
-                <span class="user-name"><%= user.name %></span>
+                <span class="user-name"><strong><%= user.name %></strong></span>
             </div>
             <% user.item.forEach(function(item, idx){ %>
                 <li>
                     <%= item.content %> 
                 </li>
                <% }) %>
-
-
             <% }) %>
-            
-            
-
-
-    </div>
+    
+        </div>
     </main>
 
 

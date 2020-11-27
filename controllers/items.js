@@ -1,4 +1,3 @@
-const item = require('../models/item');
 const Item = require('../models/item');
 const User = require('../models/user');
 
@@ -58,7 +57,7 @@ function deleteItem(req, res) {
 
 function seeAll(req, res) {
     User.find({}).populate('item').exec(function(err, users){
-        item.find({}, function(err, item){
+        Item.find({}, function(err, item){
             res.render('items/all', {
                 users, item
             })

@@ -6,17 +6,21 @@
     <title>Add a New BYGOD List</title>
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <h1>B.Y.G.O.D.</h1>
     <h2>Before You Get Old or Die</h2>
     <h3>EDIT BYGOD page</h3>
-    <div class=navbar-vertical">
+  
+    <div class="navbar">
         <nav>
-            <ul class="right">
-                <li>
-                    <a href="/users/:id/profile">Go Back</a>
+            <ul class="navbar">
+                <li class="navbar">
+                    <a href="/users/<%= user._id %>/profile">Back to Profile</a>
                     <a href="/logout">Logout</a>
                 </li>
             </ul>

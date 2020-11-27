@@ -1,6 +1,7 @@
 :root {
   --titlefont: 'Special Elite';
   --navfont: 'Oswald';
+  --profilefont: 'Open Sans Condensed';
 }
 
 
@@ -8,20 +9,27 @@ h1, h2 {
   font-family: var(--titlefont);
 }
 
-.navbar-vertical {
-  position: fixed;
-  
+h4 {
+  font-family: var(--titlefont);
 }
 
-ul {
+ .navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+ }
+
+
+ul .navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #f1f1f1;
+    background-color: #f1f1f1e8;
   }
   
-  li a {
+  
+ .navbar li a {
     display: block;
     color: #000;
     padding: 8px 16px;
@@ -30,16 +38,26 @@ ul {
     font-family: var(--navfont);
   }
   
-  /* Change the link color on hover */
-  li a:hover {
+  .navbar li a:hover {
     background-color: #555;
     color: white;
   }
-
-  .google-login{
+ 
+.google-login{
       font-size: 14px;
       padding: 12px 28px;
       border-radius: 8px;
       background-color: #008CBA;
-      font-family: var(--navfont);
-  }
+      font-family: 'Noto Serif JP';
+      font-weight: 700;
+      color: white;
+}
+
+.user-photo {
+  height: 50px;
+}
+
+.user-name {
+  font-family: var(--profilefont);
+}
+
