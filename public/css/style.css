@@ -2,8 +2,33 @@
   --titlefont: 'Special Elite';
   --navfont: 'Oswald';
   --profilefont: 'Open Sans Condensed';
+  --userfont: 'Lato';
+
 }
 
+* {
+  box-sizing: border-box;
+  margin 0px;
+}
+
+body {
+  width: 100%;
+}
+
+main {
+
+
+}
+
+
+header{
+  width: 100%;
+}
+
+h1 {
+  font-size: 75px;
+  margin-bottom:0px;
+}
 
 h1, h2 {
   font-family: var(--titlefont);
@@ -17,47 +42,68 @@ h4 {
   position: fixed;
   top: 0;
   right: 0;
- }
+}
 
 
 ul .navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1e8;
-  }
-  
-  
- .navbar li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-    text-align: center;
-    font-family: var(--navfont);
-  }
-  
-  .navbar li a:hover {
-    background-color: #555;
-    color: white;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1e8;
+}
+
+
+.navbar li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+  font-family: var(--navfont);
+}
+
+.navbar li a:hover {
+  background-color: #555;
+  color: white;
+}
  
 .google-login{
-      font-size: 14px;
-      padding: 12px 28px;
-      border-radius: 8px;
-      background-color: #008CBA;
-      font-family: 'Noto Serif JP';
-      font-weight: 700;
-      color: white;
+  
+  font-size: 14px;
+  padding: 12px 28px;
+  border-radius: 8px;
+  background-color: #008CBA;
+  font-family: 'Noto Serif JP';
+  font-weight: 700;
+  color: white;
 }
 
 .user-photo {
+  margin-top: 20px;
   height: 50px;
+  width: 50px;
 }
 
 .user-name {
+  font-size: 30px;
   font-family: var(--profilefont);
 }
 
+.user-box {
+  padding: 10px;
+  font-family: var(--profilefont);
+  width: 1000px;
+}
+
+
+.user-display {
+font-family: var(--userfont);
+font-size: 20px;
+
+}
+
+.submit-btn, .form {
+  font-family: var(--titlefont);
+  padding: 2px 2px 0px 2px;
+}

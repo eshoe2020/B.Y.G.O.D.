@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Special+Elite&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">   
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -33,21 +34,25 @@
 
 
     <main>
-
-        <img class="user-photo" src="<%= user.avatarURL %>" alt="">
-        <span class="user-name"><%= user.name %></span>
-
-            
+        
+            <img class="user-photo" src="<%= user.avatarURL %>" alt="">
+            <span class="user-name"><%= user.name %></span>
+        
+        <div class="user-display">
             <% users.item.forEach(function(item, idx){ %>
                 <li>
                     <%= item.content %>
+                   
                     <a href="/items/<%= item._id %>/edit">
-                    <button class="edit-button">Edit</button>
+                    <button class="submit-btn">Edit</button>
                     </a>
                 </li>
             <% }) %>
-            
+
+
+        </div>
         
+
     </main>
 
 

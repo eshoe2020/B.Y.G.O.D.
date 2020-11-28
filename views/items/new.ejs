@@ -12,9 +12,11 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <h1>B.Y.G.O.D.</h1>
-    <h2>Before You Get Old or Die</h2>
-    <h3>Add a New BYGOD</h3>
+    <header>
+        <h1>B.Y.G.O.D.</h1>
+        <h2>Before You Get Old or Die</h2>
+        <h3>Add a New BYGOD</h3>
+    </header>
     <div class="navbar">
         <nav>
             <ul class="navbar">
@@ -30,15 +32,15 @@
 
 
     <main>
-        <div>
+      
             <form action="/users/<%= user._id %>/profile" method="POST">
-                <label>BYGOD: </label>
+                <label class="form">BYGOD: </label>
                
                     <input type="text" name="content">
                     <input class="submit-btn" type="submit" value="Add BYGOD">
                 
             </form>
-        </div>
+        
        
 
 
