@@ -86,47 +86,6 @@ function addItemToProfile(req, res) {
 }
 
 
-// function seeAll(req, res) {
-//     User.findById(req.user);
-//     User.find({}).populate('item').exec(function (err, users) {
-//         Item.find({}, function (err, item) {
-//             console.log(req.user);
-//             res.render('items/all', {
-//                 users,
-//                 item,
-//                 user: req.user
-//             })
-//         })
-//     })
-// }
-
-// function seeAll(req, res) {
-
-//     User.find({}).populate('item').exec(function (err, users) {
-//         User.find({_id: {$nin: [user._id]}}, function(err, users){
-//             console.log(req.user);
-//             res.render('items/all', {
-//                 users,
-//                 user: req.user
-//                 })
-//             })
-//         })
-//     }
-
-function seeAll (req, res){
-    let userId = req.user._id;
-    User.find({
-        match: { _id: {"$not":[userId]}}
-    }).populate('item').exec(function (err, users){
-        console.log(req.user._id);
-        console.log(userId);
-        res.render('items/all', {
-            users, 
-            user: req.user
-        })
-    })
-}
-
 function seeAll (req, res) {
     let userId = req.user._id;
     User.find({_id: {$ne: [userId]}}).populate('item').exec(function(err, users){
