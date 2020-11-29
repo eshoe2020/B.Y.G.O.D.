@@ -22,7 +22,7 @@
         <nav>
             <ul class="navbar">
                 <li class="navbar">
-                    <a href="/users/<%= user._id %>/profile">Your Profile</a>
+                    <a href="/users/<%= user._id %>/profile">My Profile</a>
                     <a href="/items/new">New BYGOD</a>
                     <a href="/items/all">Explore BYGODs</a>
                     <a href="/logout">Logout</a>
@@ -41,25 +41,26 @@
                     <img class="user-photo" src="<%= user.avatarURL %>" alt="">
                     <span class="user-name"><%= user.name %></span>
                     
-                    
+                    <div>
                     <% user.item.forEach(function(item, idx){ %>
                    
+                        <form action="/items/<%= item._id %>" method="POST">
                         <li>
                                
                             <%= item.content %>
-                            <form action="/items/<%= item._id %>" method="POST">
                             <input class="submit-btn" type="submit" value="Add to My Profile">
                             </form>
                         </li>
                         
                         <% }) %>
+                    </div>    
                         <% } %>
                         <% }) %>
                     
         </div>
 
     </main>
-
+   
 
 </body>
 </html>
