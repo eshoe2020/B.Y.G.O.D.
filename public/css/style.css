@@ -205,3 +205,21 @@ ul .navbar {
   font-family: var(--titlefont);
   padding: 2px 2px 0px 2px;
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  background-color: black;
+}
+
+header {
+position: fixed;
+top: 0;
+left: 0;
+height: 43px;
+width: 100%;
+background-color: black;
+}

@@ -60,10 +60,6 @@ function deleteItem(req, res) {
             index = user.item.indexOf(req.params.id);
             let myUser = req.user._id;
             let deleted = user.item.splice(index, 1);
-            console.log(req.user._id);
-            console.log(req.params.id);
-            console.log(index);
-            console.log(deleted);
             user.save(function (err) {
                 res.redirect(`/users/${req.user._id}/profile`)
             })
@@ -89,8 +85,6 @@ function addItemToProfile(req, res) {
 function seeAll (req, res) {
     let userId = req.user._id;
     User.find({_id: {$ne: [userId]}}).populate('item').exec(function(err, users){
-        console.log(req.user._id);
-        console.log(userId);
         res.render('items/all', {
             users,
             user: req.user
