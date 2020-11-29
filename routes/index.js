@@ -10,12 +10,12 @@ router.get('/oauth2callback', passport.authenticate('google', {
     failureRedirect: '/'
 }));
 
-router.get('/logout', function(req, res) {
+router.get('/logout', function (req, res) {
     req.logOut();
     res.redirect('/');
 });
 
-router.get('/', function(req, res) {
+router.get('/', function (req, res) {
     res.render('index');
 });
 

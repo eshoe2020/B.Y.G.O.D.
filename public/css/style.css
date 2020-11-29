@@ -3,7 +3,6 @@
   --navfont: 'Oswald';
   --profilefont: 'Open Sans Condensed';
   --userfont: 'Lato';
-  --backgroundcolor: #adb5bd;
 }
 
 * {
@@ -15,6 +14,8 @@ body {
   background: #f8f9fa;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .circle {
@@ -25,70 +26,71 @@ body {
   box-shadow: 0px 0px 1px 0px #6c757d;
 }
 
-.small{
+.small {
   width: 200px;
   height: 200px;
   left: -100px;
   bottom: -100px;
 }
 
-.medium{
+.medium {
   width: 400px;
   height: 400px;
   left: -200px;
   bottom: -200px;
 }
 
-.large{
+.large {
   width: 600px;
   height: 600px;
   left: -300px;
   bottom: -300px;
 }
 
-.xlarge{
+.xlarge {
   width: 800px;
   height: 800px;
   left: -400px;
   bottom: -400px;
 }
 
-.xxlarge{
+.xxlarge {
   width: 1000px;
   height: 1000px;
   left: -500px;
   bottom: -500px;
 }
 
-.shade1{
+.shade1 {
   opacity: 0.2;
 }
-.shade2{
+
+.shade2 {
   opacity: 0.5;
 }
 
-.shade3{
+.shade3 {
   opacity: 0.7;
 }
 
-.shade4{
+.shade4 {
   opacity: 0.8;
 }
 
-.shade5{
+.shade5 {
   opacity: 0.9;
 }
 
-@keyframes ripple{
-  0%{
+@keyframes ripple {
+  0% {
     transform: scale(0.8);
   }
-  
-  50%{
+
+  50% {
     transform: scale(1.2);
   }
-  
-  100%{
+
+  100% {
     transform: scale(0.8);
   }
 }
@@ -96,11 +98,12 @@ body {
 h1 {
   text-align: center;
   font-size: 100px;
-  margin-bottom:0px;
-  
+  margin-bottom: 0px;
+
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: var(--titlefont);
   text-align: center;
 }
@@ -108,18 +111,15 @@ h1, h2 {
 h4 {
   font-family: var(--titlefont);
   text-align: center;
+  line-height: 2;
 }
 
 
 div.index-login {
   margin-top: 40px;
-  position: fixed;
-  left: 50%;
-  right: 50%;
-  top: 25%;
 }
 
- .navbar {
+.navbar {
   position: fixed;
   top: 0;
   right: 0;
@@ -130,26 +130,33 @@ ul .navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 200px;
-  background-color: #f1f1f1e8;
+  width: 180px;
+  border: solid 1px black;
+  background-color: whitesmoke;
+  box-shadow: 0 8px 16px 10px rgba(0, 0, 0, 0.15);
 }
-
 
 .navbar li a {
   display: block;
   color: #000;
-  padding: 8px 16px;
+  padding: 8px 12px;
+  border: solid 1px black;
   text-decoration: none;
   text-align: center;
   font-family: var(--navfont);
 }
 
+.navbar li a.active {
+  background-color: teal;
+  color: whitesmoke;
+}
+
 .navbar li a:hover {
-  background-color: #555;
+  background-color: #636364;
   color: white;
 }
- 
-.google-login{
+
+.google-login {
   font-size: 14px;
   padding: 12px 28px;
   border-radius: 8px;
@@ -157,6 +164,7 @@ ul .navbar {
   font-family: 'Noto Serif JP';
   font-weight: 700;
   color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .user-photo {
@@ -185,14 +193,15 @@ ul .navbar {
 }
 
 .user-display {
-font-family: var(--userfont);
-font-size: 20px;
-width: 1000px;
-margin: 5px 0px 0px 0px;
+  font-family: var(--userfont);
+  font-size: 20px;
+  width: 1000px;
+  margin: 5px 0px 0px 0px;
 
 }
 
-.submit-btn, .form {
+.submit-btn,
+.form {
   font-family: var(--titlefont);
   padding: 2px 2px 0px 2px;
 }

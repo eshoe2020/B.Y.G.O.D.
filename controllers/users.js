@@ -6,6 +6,7 @@ module.exports = {
     profile,
 };
 
+
 function index(req, res) {
     User.find({}, function (err, users) {
         res.render('users/index', {
@@ -15,6 +16,7 @@ function index(req, res) {
     })
 }
 
+
 function profile(req, res) {
 
     User.findById(req.params.id).populate('item').exec(function (err, users) {
@@ -22,7 +24,6 @@ function profile(req, res) {
         res.render('users/profile', {
             users,
             user: req.user,
-
         })
 
     })

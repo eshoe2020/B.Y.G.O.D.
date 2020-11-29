@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your BYGODs</title>
     <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Special+Elite&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Special+Elite&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
     <header>
         <h1>B.Y.G.O.D.</h1>
@@ -24,43 +27,34 @@
                 <li class="navbar">
                     <a href="/users/<%= user._id %>/profile">My Profile</a>
                     <a href="/items/new">New BYGOD</a>
-                    <a href="/items/all">Explore BYGODs</a>
+                    <a class="active" href="/items/all">Explore BYGODs</a>
                     <a href="/logout">Logout</a>
                 </li>
             </ul>
         </nav>
     </div>
-
     <main>
         <div class="user-box">
             <div class="user-display">
-                
-                
                 <% users.forEach(function(user, idx) { %>
-                    <% if (user._id.equals(user && user._id)) { %>
-                    <img class="user-photo" src="<%= user.avatarURL %>" alt="">
-                    <span class="user-name"><%= user.name %></span>
-                    
-                    <div>
+                <% if (user._id.equals(user && user._id)) { %>
+                <img class="user-photo" src="<%= user.avatarURL %>" alt="">
+                <span class="user-name"><%= user.name %></span>
+                <div>
                     <% user.item.forEach(function(item, idx){ %>
-                   
-                        <form action="/items/<%= item._id %>" method="POST">
+                    <form action="/items/<%= item._id %>" method="POST">
                         <li>
-                               
                             <%= item.content %>
                             <input class="submit-btn" type="submit" value="Add to My Profile">
-                            </form>
-                        </li>
-                        
-                        <% }) %>
-                    </div>    
-                        <% } %>
-                        <% }) %>
-                    
+                    </form>
+                    </li>
+                    <% }) %>
+                </div>
+                <% } %>
+                <% }) %>
+            </div>
         </div>
-
     </main>
-   
-
 </body>
+
 </html>

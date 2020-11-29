@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your BYGODs</title>
     <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Special+Elite&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Special+Elite&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
     <header>
         <h1>B.Y.G.O.D.</h1>
         <h2>Before You Get Old or Die</h2>
-        <h4>Keep your list of items below.</h4>
+        <h4>My Profile and List of BYGODs:</h4>
     </header>
-
     <div class="navbar">
         <nav>
             <ul class="navbar">
                 <li class="navbar">
-                    <a href="/users/<%= user._id %>/profile">My Profile</a>
+                    <a class="active" href="/users/<%= user._id %>/profile">My Profile</a>
                     <a href="/items/new">New BYGOD</a>
                     <a href="/items/all">Explore BYGODs</a>
                     <a href="/logout">Logout</a>
@@ -31,30 +33,20 @@
             </ul>
         </nav>
     </div>
-
-
     <main>
-        
-            <img class="user-photo" src="<%= user.avatarURL %>" alt="">
-            <span class="user-name"><%= user.name %></span>
-        
+        <img class="user-photo" src="<%= user.avatarURL %>" alt="">
+        <span class="user-name"><%= user.name %></span>
         <div class="user-display">
             <% users.item.forEach(function(item, idx){ %>
-                <li>
-                    <%= item.content %>
-                   
-                    <a href="/items/<%= item._id %>/edit">
+            <li>
+                <%= item.content %>
+                <a href="/items/<%= item._id %>/edit">
                     <button class="submit-btn">Edit</button>
-                    </a>
-                </li>
+                </a>
+            </li>
             <% }) %>
-
-
         </div>
-        
-
     </main>
-
 </body>
-</html>
 
+</html>
