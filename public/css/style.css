@@ -157,7 +157,7 @@ ul .navbar {
 }
 
 .google-login {
-  font-size: 14px;
+  font-size: 24px;
   padding: 12px 28px;
   border-radius: 8px;
   background-color: #636364;
@@ -190,6 +190,7 @@ ul .navbar {
   display: block;
   border-block: black solid 2px;
   white-space: normal;
+  overflow-wrap: normal;
 }
 
 .user-display {

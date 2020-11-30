@@ -18,9 +18,7 @@ function index(req, res) {
 
 
 function profile(req, res) {
-
     User.findById(req.params.id).populate('item').exec(function (err, users) {
-
         res.render('users/profile', {
             users,
             user: req.user,

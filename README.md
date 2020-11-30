@@ -3,14 +3,19 @@
 Before You Get Old or Die (BYGOD&trade;) is an app to track the things you would like to do before you get old, or die, since you never know which will come first. 
 
 ## Motivation
-This app aims to encourage people to live their life since none of us are guaranteed another day. No desire is too small, write it down and be reminded of it every time you log in. Be inspired by other people. Live your life!
+This app aims to encourage people to live their life since none of us are guaranteed another day. No desire is too small, type it in and be reminded of it every time you log in. Be inspired by other people, inspire other people! Live your life!
 
 ## Version 1.0
 
 ## Screenshots
 
+![LoginScreen](./public/imgs/login.png "login.png")
 
+![user-profile](./public/imgs/profile.png "profile.png")
 
+![edit-item](./public/imgs/edit.png "edit.png")
+
+![explore-users-items](./public/imgs/explore.png "explore.png")
 
 
 
@@ -34,6 +39,8 @@ This app aims to encourage people to live their life since none of us are guaran
 
 
 ## Link(s)
+https://trello.com/b/xaASpmXR/bygod
+
 
 ## Stretch Goals/Future Goals
 - Personalize the user profile page (My Profile) more.
