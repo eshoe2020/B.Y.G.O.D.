@@ -39,7 +39,12 @@ This app aims to encourage people to live their life since none of us are guaran
 
 
 ## Link(s)
+#### Trello Board 
 https://trello.com/b/xaASpmXR/bygod
+
+#### BYGOD, on Heroku
+https://bygod.herokuapp.com/
+
 
 
 ## Stretch Goals/Future Goals
