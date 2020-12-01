@@ -43,8 +43,6 @@ This app aims to encourage people to live their life since none of us are guaran
 
 
 ## Getting Started:
-#### GitHub
-https://github.com/eshoe2020/B.Y.G.O.D.
 #### Trello
 https://trello.com/b/xaASpmXR/bygod
 #### Heroku - BYGOD app 
@@ -61,5 +59,5 @@ https://bygod.herokuapp.com/
 
 ### Super-Stretch Goal
 - Add in the ability to contact a fellow user if logged-in user want to collaborate on an item.
-### Even Stretcher Goal
+### Even Stretchier Goal 
 - Create an in-app communication method. 
