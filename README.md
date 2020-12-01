@@ -33,10 +33,10 @@ This app aims to encourage people to live their life since none of us are guaran
 ## Features
 - Authentication via google-OAuth
    - Provides user authorization to  view full app features
-- Ability to create list of BYGOD&trade; items on user profile.
-- User can edit and delete their own BYGOD&trade; items as needed. 
-- User can explore other user's profiles and their BYGOD&trade; items for inspiration.
-- User can add BYGOD&trade; items from other profiles to their own profile.
+- Ability to create list of BYGOD items on user profile.
+- User can edit and delete their own BYGOD items as needed. 
+- User can explore other user's profiles and their BYGOD items for inspiration.
+- User can add BYGOD items from other profiles to their own profile.
 - All user profiles display a profile picture and user-name, obtained from Google. 
 - Navigation bar on the top right tells user what page they are currently on (highlighted in teal).
 
@@ -50,11 +50,14 @@ https://trello.com/b/xaASpmXR/bygod
 https://bygod.herokuapp.com/
 
 
-## Stretch Goals/Future Goals
-- Personalize the user profile page (My Profile) more.
-- Add in the ability to "mark off" (Strikethrough) when you complete an item.
-
+## Stretch Goals
+- Personalize the user profile page (My Profile) more:
+   - Ability to put items into personalized lists.
+   - Ability to sort items within lists, or on profile page, e.g. by date created.
+   - Ability to search through items.
+   - Ability to "mark off" (Strikethrough) when user completes an item.
+   - Add a date/time stamp that user can make visible on their profile, to see when item was added.  
 ### Super-Stretch Goal
-- Add in the ability to contact a fellow user if you want to collaborate on an item.
-   - small-stretch: make an email available (gmail most likely)
-   - big-stretch, create in-app communication method
+- Add in the ability to contact a fellow user if user wants to collaborate on an item.
+### Even Stretchier Goal
+- Create an in-app communication method.
