@@ -52,8 +52,6 @@ https://bygod.herokuapp.com/
 
 
 ## Stretch Goals
-- Personalize the user profile page (My Profile) more:
-## Stretch Goals/Future Goals
 -Personalize the user profile page (My Profile) more:
    - Ability to put items into personalized lists.
    - Ability to sort items within lists, or on profile page, e.g. by date created.
