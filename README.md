@@ -41,6 +41,7 @@ This app aims to encourage people to live their life since none of us are guaran
 - Navigation bar on the top right tells user what page they are currently on (highlighted in teal).
 
 
+
 ## Getting Started:
 #### GitHub
 https://github.com/eshoe2020/B.Y.G.O.D.
@@ -52,11 +53,15 @@ https://bygod.herokuapp.com/
 
 ## Stretch Goals
 - Personalize the user profile page (My Profile) more:
+## Stretch Goals/Future Goals
+-Personalize the user profile page (My Profile) more:
    - Ability to put items into personalized lists.
    - Ability to sort items within lists, or on profile page, e.g. by date created.
    - Ability to search through items.
    - Ability to "mark off" (Strikethrough) when user completes an item.
    - Add a date/time stamp that user can make visible on their profile, to see when item was added.  
+
 ### Super-Stretch Goal
-- Add in the ability to contact a fellow user if user wants to collaborate on an item.
-- Create an in-app communication method.
+- Add in the ability to contact a fellow user if logged-in user want to collaborate on an item.
+### Even Stretcher Goal
+- Create an in-app communication method. 
