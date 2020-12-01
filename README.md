@@ -41,20 +41,31 @@ This app aims to encourage people to live their life since none of us are guaran
 - Navigation bar on the top right tells user what page they are currently on (highlighted in teal).
 
 
+
 ## Getting Started:
 #### GitHub
 https://github.com/eshoe2020/B.Y.G.O.D.
 #### Trello
+
+## Link(s)
+#### Trello Board
 https://trello.com/b/xaASpmXR/bygod
 #### Heroku - BYGOD app 
 https://bygod.herokuapp.com/
+#### BYGOD, on Heroku
+https://bygod.herokuapp.com/
+
 
 
 ## Stretch Goals/Future Goals
-- Personalize the user profile page (My Profile) more.
-- Add in the ability to "mark off" (Strikethrough) when you complete an item.
+-Personalize the user profile page (My Profile) more:
+   - Ability to put items into personalized lists.
+   - Ability to sort items within lists, or on profile page, e.g. by date created.
+   - Ability to search through items.
+   - Ability to "mark off" (Strikethrough) when user completes an item.
+   - Add a date/time stamp that user can make visible on their profile, to see when item was added.
 
 ### Super-Stretch Goal
-- Add in the ability to contact a fellow user if you want to collaborate on an item.
-   - small-stretch: make an email available (gmail most likely)
-   - big-stretch, create in-app communication method
+- Add in the ability to contact a fellow user if logged-in user want to collaborate on an item.
+### Even Stretcher Goal
+- Create an in-app communication method. 
