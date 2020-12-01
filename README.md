@@ -46,18 +46,12 @@ This app aims to encourage people to live their life since none of us are guaran
 #### GitHub
 https://github.com/eshoe2020/B.Y.G.O.D.
 #### Trello
-
-## Link(s)
-#### Trello Board
 https://trello.com/b/xaASpmXR/bygod
 #### Heroku - BYGOD app 
 https://bygod.herokuapp.com/
-#### BYGOD, on Heroku
-https://bygod.herokuapp.com/
 
 
-
-## Stretch Goals/Future Goals
+## Stretch Goals
 -Personalize the user profile page (My Profile) more:
    - Ability to put items into personalized lists.
    - Ability to sort items within lists, or on profile page, e.g. by date created.
