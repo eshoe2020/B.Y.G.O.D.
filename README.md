@@ -61,5 +61,5 @@ https://bygod.herokuapp.com/
 
 ### Super-Stretch Goal
 - Add in the ability to contact a fellow user if logged-in user want to collaborate on an item.
-### Even Stretchier Goal
+### Even Stretchier Goal 
 - Create an in-app communication method. 
