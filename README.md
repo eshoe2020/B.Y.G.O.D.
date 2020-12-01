@@ -1,6 +1,6 @@
 # B.Y.G.O.D.
 
-Before You Get Old or Die (BYGOD&trade;) is an app to track the things you would like to do before you get old, or die, since you never know which will come first. 
+Before You Get Old or Die (BYGOD) is an app to track the things you would like to do before you get old, or die, since you never know which will come first. 
 
 ## Motivation
 This app aims to encourage people to live their life since none of us are guaranteed another day. No desire is too small, type it in and be reminded of it every time you log in. Be inspired by other people, inspire other people! Live your life!
@@ -22,6 +22,9 @@ This app aims to encourage people to live their life since none of us are guaran
 ## Technologies Used
 - CSS3
 - HTML5
+- JavaScript
+- JSON
+- EJS 
 - Node.js
 - MongoDB Atlas, cloud-hosted on AWS 
 - Heroku (for deployment)
@@ -38,8 +41,13 @@ This app aims to encourage people to live their life since none of us are guaran
 - Navigation bar on the top right tells user what page they are currently on (highlighted in teal).
 
 
-## Link(s)
+## Links
+#### GitHub
+https://github.com/eshoe2020/B.Y.G.O.D.
+#### Trello
 https://trello.com/b/xaASpmXR/bygod
+#### Heroku - BYGOD app 
+https://bygod.herokuapp.com/
 
 
 ## Stretch Goals/Future Goals
@@ -47,4 +55,6 @@ https://trello.com/b/xaASpmXR/bygod
 - Add in the ability to "mark off" (Strikethrough) when you complete an item.
 
 ### Super-Stretch Goal
-- Add in the ability to contact a fellow user if you want to collaborate on an item. 
+- Add in the ability to contact a fellow user if you want to collaborate on an item.
+   - small-stretch: make an email available (gmail most likely)
+   - big-stretch, create in-app communication method
