@@ -59,5 +59,4 @@ https://bygod.herokuapp.com/
    - Add a date/time stamp that user can make visible on their profile, to see when item was added.  
 ### Super-Stretch Goal
 - Add in the ability to contact a fellow user if user wants to collaborate on an item.
-### Even Stretchier Goal
 - Create an in-app communication method.
