@@ -43,8 +43,6 @@ This app aims to encourage people to live their life since none of us are guaran
 
 
 ## Getting Started:
-#### GitHub
-https://github.com/eshoe2020/B.Y.G.O.D.
 #### Trello
 https://trello.com/b/xaASpmXR/bygod
 #### Heroku - BYGOD app 
