@@ -41,7 +41,7 @@ This app aims to encourage people to live their life since none of us are guaran
 - Navigation bar on the top right tells user what page they are currently on (highlighted in teal).
 
 
-## Links
+## Getting Started:
 #### GitHub
 https://github.com/eshoe2020/B.Y.G.O.D.
 #### Trello
