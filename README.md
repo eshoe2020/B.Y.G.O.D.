@@ -3,7 +3,7 @@
 Before You Get Old or Die (BYGOD) is an app to track the things you would like to do before you get old, or die, since you never know which will come first. 
 
 ## Motivation
-This app aims to encourage people to live their life since none of us are guaranteed another day. No desire is too small, type it in and be reminded of it every time you log in. Be inspired by other people, inspire other people! Live your life!
+This app aims to encourage people to live their life. No desire is too small, type it in and be reminded of it every time you log in. Be inspired by other people, inspire other people! Live your life!
 
 ## Version 1.0
 
