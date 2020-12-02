@@ -23,6 +23,7 @@ This app aims to encourage people to live their life. No desire is too small, ty
 - CSS3
 - HTML5
 - JavaScript
+- Express
 - JSON
 - EJS 
 - Node.js
